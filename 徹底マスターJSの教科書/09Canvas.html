@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Canvasの基礎</title>
+    <script>
+        window.onload = function(){
+            //canvasの要素オブジェクトを取得
+            var canvas = document.getElementById("mycanvas");
+            //canvasの描画コンテキストを取得
+            var ctx = canvas.getContext("2d");
+            //描画する
+            //座標(50,60)に幅200、高さ100の長方形の枠線を書く
+            ctx.strokeRect(50,60,200,100);
+        }
+    </script>
+</head>
+<body>
+    <canvas id="mycanvas" width="640" height="400"></canvas>
+</body>
+</html>
+
+<!--canvasの要素を配置する-->
+<canvas id="mycanvas" width="640" height="400"></canvas>
+<!--描画領域の幅と高さを数値で指定する-->
+
+<!--canvasで描画するには描画コンテクストを取得する必要がある-->
+<!--2次元グラフィックを使う場合は2d、WebGLによる3次元グラフィックスはwebgl-->
+<script>
+    window.onload = function(){
+        var ctx = canvas.getContext("2d");
+        //描画する
+        //座標(50,60)に幅200、高さ100の長方形の枠線を書く
+        ctx.strokeRect(50,60,200,100);
+    }
+</script>
+
+<!--長方形の描画-->
+<!--枠線を書く-->
+strokeRect(x,y,width,height)
+<!--塗りつぶす-->
+fillRect(x,y,width,height)
+<!--長方形の領域を削除し透明にする-->
+clearRect(x,y,width,height)

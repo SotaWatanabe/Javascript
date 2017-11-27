@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BMI値</title>
+    <script>
+        window.onload = function(){
+            document.getElementById('button').onclick = function(){
+                // http://d.hatena.ne.jp/chalcedony_htn/20140722/1406029797
+                var h = parseFloat(document.getElementById("height").value);
+                var w = parseFloat(document.getElementById("weight").value);
+                //IBMの計算
+                var bmi = document.getElementById("bmi");
+                bmi.innerHTML = (w/h/h).toFixed(1);
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>身長:<input type="number" id="height">m</p>
+    <p>体重:<input type="number" id="weight">kg</p>
+    <p>あなたのBMIは<output id="bmi">?</output>です。</p>
+    <input type="button" id="button" value="計算">
+</body>
+</html>

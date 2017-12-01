@@ -1,0 +1,48 @@
+//メソッド
+
+//pushメソッド　要素の追加
+var a = ["A", "B", "C"];
+a.push("D"); //aの内容["A","B","C","D"]
+
+//2つ以上の要素を追加するには要素の値をカンマで区切って引数に指定する
+a.push("E","F"); //aの内容["A","B","C","D","E","F"]
+
+//popメソッド　１番最後の要素を削除
+var a = ["A","B","C"];
+a.pop(); //a→["A","B"]
+
+//shiftメソッド　1番最初の要素を削除
+var a = ["A","B","C"];
+a.shift(); //a→["B","C"]
+
+//unshiftメソッド　1番最初に要素を追加
+var a = ["A","B","C"];
+a.unshift("X"); //a→["X,"A","B","C"]
+
+//2つ以上の要素を追加する場合
+a.unshift("Y","Z"); //a→["Y","Z,"X","A","B","C"]
+
+//spliceメソッド
+var a = ["A","B","C","D"];
+a.splice(index, howMany, 挿入する要素);
+
+var a = ["A","B","C","D"];
+a.splice(2); //a→["A","B"]
+//第1引数のみの場合は引数以降の要素が削除される。
+
+//sortメソッド
+var a = [5,2,7,1,3,9,8];
+a.sort(function(a,b){
+    return a - b;
+});
+//a→[1,2,3,5,7,8,9]
+
+function compareFunc(key){
+    return function(a,b){
+        return a[key] - b[key];
+    }
+}
+
+//example
+var persons = [{name:"Tom", age:17},{name:"Huck", age:18},{name:"Becky", age:16}];
+persons.sort(compareFunc("age"));

@@ -1,0 +1,27 @@
+//反復メソッド
+//第1引数 value→現在処理されている配列要素の値
+//第2引数 index→現在処理されている配列要素のインデックス
+//第3引数 array→メソッドが適応されている配列への参照
+//第2,3引数は省略可能
+
+//forEachメソッド
+var a = [1,2,3,4,5];
+a.forEach(function(value){
+    sum += value;
+});
+console.log(sum); //→15
+
+a.forEach(function(v,i,a){
+    a[i] = v*v;
+});
+cpnsole.log(a); //→[1,4,9,16,25]
+
+//mapメソッド
+//mapは配列要素の各々に関数を適応する
+var a = [1,2,3,4,5];
+var b = a.map(function(x){
+    return 2*x;
+}); //b = [2,4,6,8,10]
+
+var a = [1,4,9,16,25];
+var b = a.map(Math.sqrt); //b = [1,2,3,4,5]

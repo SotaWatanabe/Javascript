@@ -25,3 +25,22 @@ var b = a.map(function(x){
 
 var a = [1,4,9,16,25];
 var b = a.map(Math.sqrt); //b = [1,2,3,4,5]
+
+var persons = [
+    {name:"Tom", age:17},
+    {name:"Huck", age:18},
+    {name:"Becky", age:16},
+];
+var names = persons.map(person => person.name);
+var ages = persons.map(person => person.age);
+console.log(names); //→["Tom","Huck","Becky"]
+console.log(ages); //→[17,18,19]
+
+//reduceメソッド
+//callback : 畳み込みを行う
+//initial : callbackを最初に呼ばれる時の第1引数の値
+//calback関数の引数は以下
+//prev : 直前の要素に対する関数の戻り値、もしくはinitialか1番目の要素の値
+//value : 現在処理されている配列要素の値
+//index : 現在処理される配列要素のインデックス
+//array : メソッドが適応されている配列への参照

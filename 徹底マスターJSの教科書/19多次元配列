@@ -1,0 +1,17 @@
+//2次元配列を生成する
+var x = new Aerray(3);
+for(var i=0; i<3; i++){
+    x[i] = new Array(3);
+}
+//2次元配列に値を代入する
+for(var count=1, i=0; i<3; i++){
+    for(var j=0; j<3; j++){
+        x[i][j]=count++;
+    }
+}
+
+var x = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+];

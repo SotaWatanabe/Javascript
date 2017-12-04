@@ -1,0 +1,16 @@
+//JSのコードの埋め込み
+//①script要素の要素内容に記載する
+<script>
+    console.log("Hello");
+</script>
+
+//②外部ファイルから読み込む
+<script src="../../sample.js"></script>
+
+//③イベントハンドラ属性中に記述する
+<input type="button" value="click" onclick="console.log("Hello");">
+
+//④JavaScript URL
+<a href="javascript:console.log('I\'m pretty good');">
+    What is going on?
+</a>

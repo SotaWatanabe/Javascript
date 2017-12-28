@@ -1,0 +1,18 @@
+//var object
+var person = {}
+person.name = "Travis";
+person.age = 21;
+person.city = "LA";
+
+//all at once
+var person = {
+    name : "Travis",
+    age : 21,
+    city : "LA",
+};
+
+//another way
+var person = new Object();
+person.name = "Travis";
+person.age = 21;
+person.city = "LA";

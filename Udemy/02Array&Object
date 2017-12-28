@@ -1,0 +1,15 @@
+//array
+var dogs = ["Rusty", "Lucky", "Bubba"];
+dogs[1] //Lucky
+dogs.push("Wyatt")
+dogs //"Rusty", "Lucky", "Bubba","Wyatt"
+
+//objects
+var dog = {
+    name : "Bubba",
+    breed : "Lab",
+}
+dog["name"] //Bubba
+dog.name //Bubba
+dog.age = 6
+dog //name : "Bubba", breed : "Lab", age : 6

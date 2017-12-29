@@ -1,0 +1,10 @@
+//method
+document.getElementById()
+
+document.getElementByClassName()
+
+document.getElementByTagName()
+
+document.querySelector()
+
+document.querySelectorAll()
